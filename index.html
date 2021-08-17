@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="icon" href="img/logo.png">
+  <title>Scotland's Attractions</title>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="Scotland's Attraction">
+  <meta name="keywords" content="Scotland, Attractions">
+  <meta name="author" content="Anna Zaragoza">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="responsive.css">
+
+  <script src="https://kit.fontawesome.com/df19045c01.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <div id="wrap">
+    <header>
+
+      <!-- Logo as a link to the main page of the webpage -->
+      <div id="logo" class="header">
+        <a href="index.html">
+        <img src="img/logo.png" alt="Logo Scotland's Attractions" />
+        </a>
+      </div>
+      <!-- End of logo-link -->
+
+      <!-- Slogan of the company-->
+      <div class="header" id="centered">
+        <h2>Explore Scotland's Best for Less</h2>
+      </div>
+
+    </header>
+    <!-- End of the header -->
+
+    <!-- Beginning of navigation bar -->
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html" id="home">Home</a>
+        </li>
+        <li>
+          <a href="index.html">Heritage</a>
+          <!-- dropdown menu -->
+            <ul>
+              <li>
+                <a href="index.html">Castles</a>
+              </li>
+              <li>
+                <a href="index.html">Museums</a>
+              </li>
+              <li>
+                <a href="index.html">Art Galleries</a>
+              </li>
+            </ul>
+            <!-- end of dropdown menu -->
+        </li>
+        <li>
+          <a href="index.html">Nature</a>
+          <!-- dropdown menu -->
+            <ul>
+              <li>
+                <a href="index.html">Loch Lomond</a>
+              </li>
+              <li>
+                <a href="index.html">Cruising Loch Ness and the Caledonian Canal</a>
+              </li>
+              <li>
+                <a href="index.html">Isle of Skye and the Inner Hebrides</a>
+              </li>
+              <li>
+                <a href="index.html">The Northern Highlands</a>
+              </li>
+              <li>
+                <a href="index.html">Isle of Aran</a>
+              </li>
+            </ul>
+            <!-- end of dropdown menu -->
+        </li>
+        <li>
+          <a href="index.html">Events</a>
+        </li>
+        <li>
+          <a href="index.html">Family</a>
+        </li>
+        <li>
+          <a href="index.html">On a budget</a>
+        </li>
+        <li>
+          <a href="index.html">Top 10</a>
+        </li>
+      </ul>
+
+      <!-- Beginning nav bar max-width:680px -->
+      <div id="menuSmart">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-user-plus"></i>
+      </div>
+      <!-- End nav bar max-width:680px -->
+
+    </nav>
+    <!-- End of the navigation bar -->
+
+    <main id="maincontent">
+
+    <!-- Beginning of the side bar -->
+    <aside>
+      <div id="search">
+        <form>
+          <label for="Location">Location:</label>
+          <input type="text" id="Location" name="Location">
+          <label for="attractionname">Attraction name:</label>
+          <input type="text" id="attractionname" name="attractionname">
+          <label for="attractiontype">Attraction type:</label>
+          <input type="text" id="attractiontype" name="attractiontype">
+          <label for="price">Price:</label>
+          <input type="text" id="price" name="price">
+          <input type="submit" value="Search" />
+        </form>
+      </div>
+      <!-- for screen max-width:944px -->
+      <div id="SingleSearch">
+        <form>
+          <input type="text" name="singleSearch" onfocus="this.value=''" value="Search...">
+          <input type="submit" value="Search" />
+        </form>
+      </div>
+      <!-- for screen max-width:944px -->
+      <div id="login">
+        <form>
+          <label for="user">User:</label>
+          <input type="text" id="user" name="User" />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" />
+
+          <input type="submit" value="Log In" />
+
+          <a href="#">Sign up</a>
+          <a href="#">Forgot your password?</a>
+        </form>
+      </div>
+      <!-- for screen max-width:944px -->
+      <div id="SingleLogin">
+        <form>
+          <input type="text" id="user" name="User" onfocus="this.value=''" value="Username..." />
+          <input type="password" id="password" name="password" onfocus="this.value=''" value="password..." />
+          <input type="submit" value="Log In" />
+        </form>
+      </div>
+      <!-- for screen max-width:944px -->
+    </aside>
+    <!-- End of the side bar -->
+
+      <!-- Beginning of coupons -->
+      <section id="coupons">
+
+        <article class="coupons">
+
+          <h2>Popular Deals</h2>
+          <!-- Beginning of a coupon -->
+          <article class="coupon">
+
+          <article class="deal" id="royalEdinburgh">
+            <h3>Royal Edinburgh Ticket </h3>
+            <p>Visit Scotland's top three royal attractions with just one great-value pass</p>
+            <!-- maybe for the future:
+            <section class="save">
+            </section>
+            <section class="interact">
+              <span id="rate"></span>
+              <span id="share"></span>
+              <span id="buy"></span>
+            <section>
+            -->
+          </article>
+
+          <artcile class="hiddendeal">
+            <h3>Royal Edinburgh Ticket </h3>
+            <p>Visit Scotland's top three royal attractions with just one great-value pass</p>
+            <section>
+              <ul>
+                <li><i class="fas fa-check-circle"></i>Edinburgh Castle</li>
+                <li><i class="fas fa-check-circle"></i>Palace of Holyroodhouse</li>
+                <li><i class="fas fa-check-circle"></i>Royal Yacht Britannia</li>
+                <li><i class="fas fa-check-circle"></i>Hop-on hop-off bus tour</li>
+                <li><i class="fas fa-check-circle"></i>Pass valid for 48 hours</li>
+              </ul>
+            </section>
+          </article>
+          <!-- End of a coupon -->
+
+          <!-- Beginning of a coupon -->
+          <article class="coupon">
+
+          <article class="deal" id="whiskyAndHighlands">
+            <h3>Whisky and Scottish Highlands Tour</h3>
+            <p>1 day (Highland Explorer)</p>
+          </article>
+
+          <artcile class="hiddendeal">
+            <h3>Whisky and Scottish Highlands Tour</h3>
+            <p>1 day (Highland Explorer)</p>
+            <section>
+              <ul>
+                <li><i class="fas fa-check-circle"></i>Wallace Monument</li>
+                <li><i class="fas fa-check-circle"></i>Award-winning whisky distillery </li>
+                <li><i class="fas fa-check-circle"></i>Hermitage Forest </li>
+                <li><i class="fas fa-check-circle"></i>Dunkeld</li>
+                <li><i class="fas fa-check-circle"></i>Return ticket from Edinburgh</li>
+                <li><i class="fas fa-check-circle"></i>Expert tour guides</li>
+              </ul>
+            </section>
+          </article>
+          <!-- End of a coupon -->
+
+          <!-- Beginning of a coupon -->
+          <article class="coupon">
+
+          <article class="deal" id="lochNess">
+            <h3>Loch Ness and Scottish Highlands Tour</h3>
+            <p>1 day (Highland Explorer)</p>
+          </article>
+
+          <artcile class="hiddendeal">
+            <h3>Loch Ness and Scottish Highlands Tour</h3>
+            <p>1 day (Highland Explorer)</p>
+            <section>
+              <ul>
+                <li><i class="fas fa-check-circle"></i>Loch Ness</li>
+                <li><i class="fas fa-check-circle"></i>Glencoe Valley</li>
+                <li><i class="fas fa-check-circle"></i>Ben Nevis</li>
+                <li><i class="fas fa-check-circle"></i>Fort Augustus</li>
+                <li><i class="fas fa-check-circle"></i>Forth Bridge</li>
+                <li><i class="fas fa-check-circle"></i>Stirling Castle</li>
+              </ul>
+            </section>
+          </article>
+          <!-- End of a coupon -->
+        </article>
+        <!-- End of popular deals -->
+
+        <!-- Beginning of Featured trips -->
+        <article class="featuredCoupons">
+          <h2>Featured Trips</h2>
+
+          <section class="flexDeals">
+
+            <article class="featuredCoupon">
+                <div class="image" id="skye"></div>
+                <h3>Isle of Skye</h3>
+                <h5>Save up to 20%</h5>
+            </article>
+
+            <article class="featuredCoupon">
+                <div class="image" id="highlands"></div>
+                <h3>The Highlands</h3>
+                <h5>Save up to 10%</h5>
+            </article>
+
+            <article class="featuredCoupon">
+                <div class="image" id="central"></div>
+                <h3>Central Scotland</h3>
+                <h5>Save up to 25%</h5>
+            </article>
+
+            <article class="featuredCoupon">
+                <div class="image" id="lothians"></div>
+                <h3>The Lothians</h3>
+                <h5>Save up to 30%</h5>
+            </article>
+          </section>
+
+        </article>
+        <!-- End of Featured trips -->
+
+        <!-- Beginning of Featured Deals in Edinburgh -->
+        <article class="featuredCoupons">
+          <h2>Featured Deals in Edinburgh</h2>
+
+          <section class="flexDeals">
+
+            <article class="featuredCoupon">
+                <div class="image" id="tea"></div>
+                <h3>Tea at Brunswick</h3>
+                <h5>From &#163;20</h5>
+            </article>
+
+            <article class="featuredCoupon">
+                <div class="image" id="ghost"></div>
+                <h3>The Ghost Bus</h3>
+                <h5>Save up to 50%</h5>
+            </article>
+
+            <article class="featuredCoupon">
+                <div class="image" id="festival"></div>
+                <h3>Edinburgh Festival City</h3>
+                <h5>Save up to 25%</h5>
+            </article>
+
+            <article class="featuredCoupon">
+                <div class="image" id="edinburgh"></div>
+                <h3>Edinburgh in 3 days</h3>
+                <h5>Save up to 50%</h5>
+            </article>
+          </section>
+
+        </article>
+        <!-- End of Featured trips -->
+
+
+      <!-- End of coupons -->
+
+      <!-- Beginning of the sections -->
+      <!-- code for the section Castles - old code
+      <section id="castles">
+        <h3 class="title">Castles</h3>
+        <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id erat et dui cursus mattis quis vitae arcu. Maecenas et luctus nunc. Nunc augue lorem, hendrerit a accumsan at, suscipit quis enim. Aenean auctor ex lacus, non ultrices orci commodo sit amet. Integer tempus eu orci nec fermentum. Quisque elit quam, vestibulum non leo sed, blandit finibus tellus. Curabitur at purus cursus, varius orci ut, elementum mauris. Aliquam erat volutpat. Donec semper non tellus sed molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec imperdiet orci erat, ut euismod leo efficitur a. Cras vitae lobortis risus, quis viverra nisl. Sed blandit ex laoreet gravida consectetur. Phasellus tristique elit nec porttitor placerat. Donec sit amet gravida elit. Sed suscipit tempor est.
+        </article>
+      </section>
+
+      <section class="castle">
+
+        <h3 class="title">Edinburgh Castle</h3>
+
+        <div class="image">
+          <a href="https://en.wikipedia.org/wiki/Edinburgh_Castle" target="_blank">
+            <img src="img/EdinburghCastle.jpg" alt="EdinburghCastle" title="Edinburgh Castle" />
+          </a>
+        </div>
+        <div class="image">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8936.17936788071!2d-3.1999135!3d55.9485947!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x469a1eebe54c0a58!2sEdinburgh%20Castle!5e0!3m2!1sen!2spl!4v1604571354774!5m2!1sen!2spl" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+          </iframe>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="text">
+          <p class="description">
+             Quisque elit quam, vestibulum non leo sed, blandit finibus tellus. Curabitur at purus cursus, varius orci ut, elementum mauris. Aliquam erat volutpat. Donec semper non tellus sed molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+          </p>
+
+          <div class="openning">
+            <table class="hours">
+              <tr>
+                <th>Season</th>
+                <th>Opens</th>
+                <th>Last Entry</th>
+                <th>Closing time</th>
+              </tr>
+              <tr>
+                <td>Summer (1 Aug - 30 Sep)</td>
+                <td>9:30am</td>
+                <td>5pm</td>
+                <td>6pm</td>
+              </tr>
+              <tr>
+                <td>Winter (1 Oct - 31 Mar)</td>
+                <td>9.30am</td>
+                <td>4pm</td>
+                <td>5pm</td>
+              </tr>
+            </table>
+        </div>
+
+        <h3>CHECK OFFER</h3>
+
+        <div class="date">
+          <form class="form" id="day">
+              <label for="Day">Day</label><br />
+              <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">11</option>
+                <option value="22">12</option>
+                <option value="23">13</option>
+                <option value="24">14</option>
+                <option value="25">15</option>
+                <option value="26">16</option>
+                <option value="27">17</option>
+                <option value="28">18</option>
+                <option value="29">19</option>
+                <option value="30">20</option>
+                <option value="31">11</option>
+              </select>
+            </form>
+            <form class="form">
+              <label for="Month">Month</label><br />
+              <select>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="Jun">Jun</option>
+                <option value="Jully">Jully</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+              </select>
+            </form>
+            <form class="form">
+              <label for="year">Year</label><br />
+              <select>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+              </select>
+            </form>
+            <form class="form">
+              <label for="availability">Availability</label><br />
+              <input type="button" value="Check">
+            </form>
+          </div>
+          <div class="clearfix"></div>
+
+          <div class="tablePrice">
+            <table class="price">
+              <tr>
+                <td>£17.50/£15.50</td>
+                <td>Adult (16-59yrs)</td>
+                <td>
+                  <form>
+                    <select>
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </form>
+                </td>
+              </tr>
+              <tr>
+                <td>£14.00/£12.40</td>
+                <td>Concession (60yrs+ and unemployed)</td>
+                <td>
+                  <form>
+                    <select>
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </form>
+                </td>
+              </tr>
+              <tr>
+                <td>£10.50/£9.30</td>
+                <td>Child (5-15yrs)</td>
+                <td>
+                  <form>
+                    <select>
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </form>
+                </td>
+              </tr>
+              <tr>
+                <td>£31.00</td>
+                <td>Family (1 adult, 2 children)</td>
+                <td>
+                  <form>
+                    <select>
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </form>
+                </td>
+              </tr>
+              <tr>
+                <td>£45.00</td>
+                <td>Family (2 adults, 2 children)</td>
+                <td>
+                  <form>
+                    <select>
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </form>
+                </td>
+              </tr>
+              <tr>
+                <td>£53.00</td>
+                <td>Family (2 adults, 3 children)</td>
+                <td>
+                  <form>
+                    <select>
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </form>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="links">
+            <a href="https://www.edinburghcastle.scot/plan-your-visit/opening-times" target="_blank">
+              More information
+            </a>
+          </div>
+          <div class="linksRight">
+            <a href="#">
+              Add to basket
+            </a>
+          </div>
+          <div class="clearfix"></div>
+
+        </div>
+      </section>
+      -->
+
+    </main>
+    <!-- End of the main content -->
+
+    <footer>
+
+      <div class="footer">
+        <div id="about">
+        <h4>ABOUT US</h4>
+        <ul>
+          <li>
+            <a href="#">Who we are</a>
+          </li>
+          <li>
+            <a href="#">Our partners</a>
+          </li>
+          <li>
+            <a href="#">News</a>
+          </li>
+          <li>
+            <a href="#">Contact us</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+
+      <div class="footer">
+        <div id="support">
+        <h4>CUSTOMERS SUPPORT</h4>
+          <ul>
+            <li>
+              <a href="#">Support</a>
+            </li>
+            <li>
+              <a href="#">FAQ</a>
+            </li>
+            <li>
+              <a href="#">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#">Privacy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div id="extras">
+        <h4>EXTRAS</h4>
+        <ul>
+          <li>
+            <a href="#">Videos</a>
+          </li>
+          <li>
+            <a href="#">Photos</a>
+          </li>
+          <li>
+            <a href="#">Mobile Apps</a>
+          </li>
+          <li>
+            <a href="#">Useful links</a>4
+          </li>
+        </ul>
+      </div>
+      </div>
+
+      <div class="footer">
+        <div id="followUs">
+        <h4>FOLLOW US</h4>
+        <ul id="follow">
+          <li class="overlay">
+            <a href="#">Facebook</a>
+            <i class="fab fa-facebook-square"></i>
+          </li>
+          <li class="overlay">
+            <a href="#">Twitter</a>
+            <i class="fab fa-twitter-square"></i>
+          </li>
+          <li class="overlay">
+            <a href="#">Google+</a>
+            <i class="fab fa-google-plus-square"></i>
+          </li>
+          <li class="overlay">
+            <a href="#">YouTube</a>
+            <i class="fab fa-youtube-square"></i>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="clearfix"></div>
+
+    </footer>
+
+  </div>
+
+</body>
+</html>

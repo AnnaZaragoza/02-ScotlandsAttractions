@@ -1,0 +1,701 @@
+/*FONTS*/
+@font-face {
+  font-family: "dancing";
+  src: url("css/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*GENERAL STYLES*/
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrap {
+  position: relative;
+}
+
+/* HEADER */
+header{
+  with: 100%;
+  height: 250px;
+  margin: 0px auto;
+}
+
+/* header divided by 2 equal containers */
+header .header {
+  display: block;
+  width: 49%;
+  height: 250px;
+  float: left;
+  text-align: center;
+}
+
+/* right side of the header - logo */
+header #logo {
+  height: 250px;
+  position: relative;
+}
+header #logo img{
+  height: 150px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+/* left side of the header - slogan */
+div #centered {
+    height: 250px;
+    position: relative;
+}
+div #centered h2 {
+    font-family: "dancing";
+    font-size: 25px;
+    color:  #6C8E3F;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+/* NAVIGATION BAR */
+nav {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(60, 60, 60);
+  box-shadow: 0px 0px 3px rgb(120, 120, 120);
+  position: relative;
+  z-index: 999;
+}
+
+nav > ul {
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+nav > ul > li {
+  line-height: 40px;
+  float: left;
+  border-right: 2px solid rgb(250,250,250);
+  transition: all 500ms;
+}
+
+nav > ul > li > a {
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: rgb(250,250,250);
+  text-decoration: none;
+}
+
+nav > ul > li:first-child {
+  border-left: 2px solid rgb(250,250,250);
+}
+
+nav > ul > li:hover {
+  background-color: #6C8E3F;
+}
+
+/* dropdown menu */
+nav > ul > li > ul {
+  display: none;
+  position: absolute;
+  list-style: none;
+  background-color: rgb(250,250,250);
+  box-shadow: 0px 0px 3px rgb(200,200,200);
+  transition: all 500s;
+  border-radius: 4px;
+}
+
+nav > ul > li:hover > ul {
+  display: block;
+}
+
+nav > ul > li:hover > ul > li {
+  line-height: 40px;
+  transition: all 500ms;
+}
+
+nav > ul > li:hover > ul > li > a {
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: rgb(60, 60, 60);
+  text-decoration: none;
+}
+
+nav > ul > li:hover > ul > li:hover {
+  background-color: rgb(230,230,230);
+}
+
+#menuSmart {
+  display: none;
+}
+
+/* MAIN CONTENT - banner + coupons */
+#maincontent {
+  width: 70%;
+  margin: 0px auto;
+  margin-top: 20PX;
+  padding-top: 20px;
+  z-index: 2;
+  position: relative;
+}
+
+/* popular deals */
+#coupons {
+  width: 70%;
+}
+
+.coupons {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.coupons h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: rgb(100, 100, 100);
+  font-family: "dancing";
+}
+
+.coupon {
+  width: 100%;
+  height: 300px;
+  box-shadow: 0px 0px 3px rgb(120,120,120);
+  border-radius: 7px;
+  margin-bottom: 20px;
+  font-size: 17px;
+  position: relative;
+  cursor: pointer;
+}
+
+.deal {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  border-radius: 7px;
+  transition: all 300ms;
+}
+
+/* beginning background images of coupons*/
+#royalEdinburgh {
+  background-image: url("img/royalEdinburgh.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#whiskyAndHighlands {
+  background-image: url("img/whiskyAndHighlands.jpg");
+  background-size: cover;
+  background-position: 20% 20%;
+}
+
+#lochNess {
+  background-image: url("img/lochNess.jpg");
+  background-size: cover;
+  background-position: 40% 40%;
+}
+/* end of background images of coupons*/
+
+.hiddendeal {
+  display: none;
+  position: relative;
+  transition: all 300ms;
+}
+
+.deal h3,
+.hiddendeal h3 {
+  text-align: center;
+  color: rgb(60,60,60);
+  text-shadow: 0px 0px 1px rgb(60,60,60);
+  margin-top: 20px;
+  margin-left: 20px;
+  transition: all 300ms;
+}
+
+.deal p,
+.hiddendeal p {
+  text-align: center;
+  color: rgb(60,60,60);
+  text-shadow: 0px 0px 1px rgb(60,60,60);
+  margin-left: 20px;
+  transition: all 300ms;
+}
+
+.coupon:hover .deal {
+  opacity: 0.5;
+}
+
+.coupon:hover .hiddendeal {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  border-radius: 7px;
+  background-color: rgba(108,142,63,0.8);
+}
+
+.hiddendeal h3,
+.hiddendeal p {
+  color: rgb(250,250,250);
+  transition: all 300ms;
+}
+
+.hiddendeal ul {
+  color: rgb(250,250,250);
+  list-style: none;
+  line-height: 1.8;
+  position: absolute;
+  margin-top: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.hiddendeal i {
+  padding-right: 10px;
+}
+
+/* featured deals - flexbox */
+.featuredCoupons {
+  width: 138%;
+  margin-bottom: 30px;
+}
+
+.featuredCoupons h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: rgb(100, 100, 100);
+  font-family: "dancing";
+}
+
+.flexDeals {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.featuredCoupon {
+  flex-basis: 23%;
+  height: 320px;
+  box-shadow: 0px 0px 3px rgb(120,120,120);
+  border-radius: 7px;
+  text-align: center;
+  font-size: 15px;
+  color: rgb(60,60,60);
+}
+
+.featuredCoupon:hover {
+  cursor: pointer;
+}
+
+.image {
+  width: 100%;
+  height: 230px;
+  border-radius: 7px 7px 0px 0px;
+  transition: all 300ms;
+}
+
+/* background images */
+/* featured trips */
+#skye {
+  background: url("img/IsleOfSkye.jpg");
+  background-size: cover;
+}
+
+#highlands {
+  background: url("img/highlands.jpg");
+  background-size: cover;
+}
+
+#central {
+  background: url("img/central.jpg");
+  background-size: cover;
+}
+
+#lothians {
+  background: url("img/lothians.jpg");
+  background-size: cover;
+}
+
+/* featured edinburgh */
+#tea {
+  background: url("img/tea.jpg");
+  background-size: cover;
+}
+
+#ghost {
+  background: url("img/ghost.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+
+#festival {
+  background: url("img/festival.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+
+#edinburgh {
+  background: url("img/edinburgh.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+/* background images */
+
+.featuredCoupon:hover .image {
+  opacity: 0.6;
+}
+
+.featuredCoupon > h3 {
+  margin-top: 22px;
+  transition: all 300ms;
+}
+
+.featuredCoupon:hover > h3 {
+  margin-top: 22px;
+  color: rgb(108,142,63);
+  transform: scale(1.01,1.01);
+}
+
+.featuredCoupon > h5 {
+  color: #722A6F;
+  margin-top: 5px;
+  transition: all 300ms;
+}
+
+.featuredCoupon:hover > h5 {
+  color: #722A6F;
+  margin-top: 5px;
+  color: rgb(60,60,60);
+}
+
+/*
+.coupon h3, p {
+  color: rgb(60,60,60);
+  text-shadow: 0px 0px 1px rgb(60,60,60);
+}
+
+#royal {
+  background: url("img/royalEdinburgh.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: all 300ms;
+}
+
+#royal:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.topcoupon {
+  width: 66%;
+  height: 250px;
+  background-color: #6C8E3F;
+  border-radius: 7px;
+  font-size: 15px;
+  position: absolute;
+}
+
+*/
+
+/* first section - description of the section itselft - old code
+#castles {
+    width: 66%;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.title {
+  color: #6B236C;
+  margin-bottom: 20px;
+}
+*/
+
+/* rest of the sections - offers - old code
+.castle {
+  margin-top: 50px;
+  width: 66%;
+  height: 250px;
+  background-color: rgb(250,250,250);
+  box-shadow: 0px 0px 3px rgb(200,200,200);
+  padding: 20px;
+  font-size: 15px;
+}
+*/
+
+/* image section - old code
+.image {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 450px;
+}
+
+.image > a > img {
+  display: block;
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  overflow: hidden;
+}
+*/
+
+/* text section - old code
+.text p.description {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.text h3 {
+  color: #6B236C;
+  font-size: 15px;
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.text .openning .hours {
+  width:75%;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  margin-left: 100px;
+}
+
+.text .hours th, td {
+  text-align: left;
+  color: rgb(60, 60, 60);
+  border-bottom: 1px solid rgb(180,180,180);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.text .date {
+    margin-left: 260px;
+}
+
+.text .date .form {
+  float: left;
+  margin-bottom: 25px;
+  margin-left: 30px;
+}
+
+.text .price {
+  width:50%;
+  padding-top: 10px;
+  margin-bottom: 50px;
+  border-collapse: collapse;
+  margin-left: 220px;
+}
+
+.clearfix {
+  float: none;
+  clear:both;
+}
+
+.text div.links a {
+  text-decoration: none;
+  color: rgb(60,60,60);
+  float: left;
+  transition: all 300ms;
+}
+
+.text div.links a:hover  {
+  color: rgb(108,142,63);
+  transform: scale(1.1,1.1);
+}
+
+.text div.linksRight a {
+  text-decoration: none;
+  color: rgb(60,60,60);
+  float: right;
+  transition: all 300ms;
+}
+
+.text div.linksRight a:hover  {
+  color: rgb(108,142,63);
+  transform: scale(1.1,1.1);
+}
+*/
+
+/* SIDE BAR */
+aside {
+  float: right;
+  margin-right: 3%;
+  width: 24%;
+  margin-top: 40px;
+}
+
+#search,
+#login {
+  background-color: rgb(250,250,250);
+  box-shadow: 0px 0px 3px rgb(200,200,200);
+  font-size: 15px;
+  border-radius: 7px;
+  padding-top: 20px;
+}
+
+#login {
+  margin-top: 25px;
+}
+
+#SingleSearch,
+#SingleLogin {
+  display: none;
+}
+
+#search form,
+#login form {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+#search form > label,
+#login form > label {
+ color: rgb(60,60,60);
+}
+
+#search > form > input[type="text"],
+#search > form > input[type="password"],
+#login > form > input[type="text"],
+#login > form > input[type="password"] {
+  width: 100%;
+  border: none;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  border: 1px solid rgb(200,200,200);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#search > form > input[type="submit"],
+#login > form > input[type="submit"] {
+  padding: 5px 10px;
+  background-color: #6C8E3F; /* For browsers that do not support gradients */
+  /*background: linear-gradient(#6B236C,#6F5443,#727532,#728438,#71943D,#6C8E3F);*/
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  border: 1px solid #6C8E3F;
+  border-radius: 3px;
+}
+
+#search > form > input[type="submit"]:hover,
+#login > form > input[type="submit"]:hover {
+  box-shadow: 0px 0px 2px rgb(60,60,60);
+}
+
+#login > form > a {
+  display: block;
+  text-decoration: none;
+  color: rgb(120,120,120);
+  font-size: 10px;
+}
+
+#login > form > a:first-child {
+  margin-top: 10px;
+}
+
+#login > form > a:hover {
+  color: #6C8E3F;
+  text-shadow: 0px 0px 0.1px #6C8E3F;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 250px;
+  background-color: rgb(108,142,63);
+  color: rgb(240,240,240);
+  margin-top: 50px;
+  font-size: 15px;
+  padding-top: 20px;
+}
+
+footer > div.footer {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+h4 {
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+footer > div.footer #about {
+  padding-left: 350px;
+}
+
+footer > div.footer #support {
+  padding-left: 200px;
+}
+
+footer > div.footer #extras {
+  padding-left: 150px;
+}
+
+footer > div.footer ul {
+  list-style: none;
+  line-height: 1.5;
+}
+
+footer .footer ul li {
+  cursor: pointer;
+}
+
+footer .footer ul li a {
+  text-decoration: none;
+  color: rgb(240,240,240);
+  transition: all 400ms;
+}
+
+footer .footer ul li:hover a {
+  color: rgb(180,180,180);
+  width: 100%;
+}
+
+footer ul#follow li.overlay a {
+  text-decoration: none;
+  color: rgb(240,240,240);
+  transition: all 400ms;
+}
+
+footer ul#follow li.overlay:hover a {
+  padding-left: 10px;
+  opacity: 0;
+}
+
+footer ul#follow li.overlay i {
+  display: block;
+  position: absolute;
+  margin-left: 40px;
+  margin-top: -15px;
+  transform: translateX(0%);
+  opacity: 0;
+  transition: all 400ms;
+}
+
+footer ul#follow li.overlay:hover i {
+  opacity:1;
+  color: rgb(180,180,180);
+  transform: translateX(-200%);
+}
