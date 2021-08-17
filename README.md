@@ -10,5 +10,5 @@ Explore Scotland's best for less. Webpage that offers deals (mainly tourists att
 * Transitions and Animations
 
 # References:
-https://www.udemy.com/course/master-en-css-responsive-sass-flexbox-grid-y-boostrap-4/
-https://www.w3schools.com/
+* https://www.udemy.com/course/master-en-css-responsive-sass-flexbox-grid-y-boostrap-4/
+* https://www.w3schools.com/
