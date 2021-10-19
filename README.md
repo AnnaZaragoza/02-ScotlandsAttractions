@@ -1,5 +1,5 @@
 # ScotlandsAttractions
-Explore Scotland's best for less. Landing page of web that offers deals (mainly tourists attractions) in Scotland.
+Explore Scotland's best for less. Landing page of a web that offers deals (mainly tourists attractions) in Scotland.
 
 ![Alt Text](https://github.com/AnnaZaragoza/ScotlandsAttractions/blob/9da425a8ad5937f3786fa7637a26b3ef51a804a7/gif/gif.gif)
 
