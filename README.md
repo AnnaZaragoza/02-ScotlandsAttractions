@@ -9,6 +9,9 @@ Explore Scotland's best for less. Landing page of a web that offers deals (mainl
 * Flexbox
 * Transitions and Animations
 
+# Check the site:
+[Scotlant's Attractions]()
+
 # References:
 * https://www.udemy.com/course/master-en-css-responsive-sass-flexbox-grid-y-boostrap-4/
 * https://www.w3schools.com/
