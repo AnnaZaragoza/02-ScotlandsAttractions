@@ -10,7 +10,7 @@ Explore Scotland's best for less. Landing page of a web that offers deals (mainl
 * Transitions and Animations
 
 # Check the site:
-[Scotlant's Attractions]()
+[Scotlant's Attractions](https://scotlandsattractions.netlify.app/)
 
 # References:
 * https://www.udemy.com/course/master-en-css-responsive-sass-flexbox-grid-y-boostrap-4/
